@@ -1,0 +1,26 @@
+.messageBox {
+    padding: 1rem;
+    border: 0.1rem solid rgb(209, 125, 0);
+    color: #ffffff;
+    font-size: 1.5rem;
+    width: fit-content;
+    max-width: 60%;
+    border-radius: 1rem;
+    margin: 1rem;
+    clear: both;
+}
+
+.right {
+    float: right;
+}
+
+.left {
+    float: left;
+}
+
+@media only screen and (max-width : 768px) {
+    .messageBox {
+        max-width: 100%;
+
+    }
+}

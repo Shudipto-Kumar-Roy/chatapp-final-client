@@ -1,0 +1,137 @@
+.chatpage {
+    background-color: rgb(39, 39, 39);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.chatcontainer {
+    height: 70%;
+    width: 50%;
+    border: 0.1rem solid #ffffff;
+    border-radius: 1rem;
+    padding: 0.5rem;
+}
+
+.chatheader {
+    height: 10%;
+    background-color: rgb(250, 151, 2);
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatheader>h2 {
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 500;
+    margin: 0.5rem 1rem;
+}
+
+.chatheader>a {
+    font-size: 2rem;
+    color: rgb(139, 61, 202);
+    font-weight: 500;
+    margin: 0.5rem 1rem;
+}
+
+.chatbox {
+    height: 75%;
+    border-radius: 1rem;
+
+}
+
+.chatinputbox {
+    height: 15%;
+    border: 0.3rem solid rgb(39, 39, 39);
+    background-color: #ffffff;
+    border-radius: 1rem;
+}
+
+.chatinputbox>input {
+    outline: none;
+    border: none;
+    font-size: 2rem;
+    padding: 0 1rem;
+    font-family: 'Architects Daughter', cursive;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    width: 80%;
+    max-height: 80%;
+}
+
+.chatinputbox>input::placeholder {
+    font-family: 'Architects Daughter', cursive;
+}
+
+.chatinputbox>button {
+    outline: none;
+    border: none;
+    background-color: rgb(250, 151, 2);
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    font-size: 2rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    width: 20%;
+    height: 100%;
+    transition: 0.3s all;
+}
+
+.chatinputbox>button:hover {
+    background-color: rgb(209, 125, 0);
+
+}
+
+.chatinputbox>button>* {
+    font-size: 3rem;
+    color: rgb(139, 61, 202);
+    transition: 0.3s all;
+}
+
+@media only screen and (max-width : 425px) {
+    .chatcontainer {
+        width: 90%;
+        height: 30rem;
+    }
+
+    .chatinputbox>input {
+        font-size: 1.6rem;
+    }
+
+    .chatinputbox>button>* {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width : 426px) and (max-width : 668px) {
+    .chatcontainer {
+        width: 80%;
+    }
+
+    .chatinputbox>input {
+        font-size: 1.6rem;
+    }
+
+    .chatinputbox>button>* {
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (min-width : 669px) and (max-width : 768px) {
+    .chatcontainer {
+        width: 80%;
+        height: 30rem;
+    }
+
+    .chatinputbox>input {
+        font-size: 1.6rem;
+    }
+
+    .chatinputbox>button>* {
+        font-size: 2.5rem;
+    }
+}

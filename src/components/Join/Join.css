@@ -1,0 +1,105 @@
+.joinpage {
+    background-color: rgb(39, 39, 39);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.joincontainer {
+    border-top: 1rem solid rgb(207, 207, 207);
+    border-right: 1rem solid rgb(207, 207, 207);
+    border-bottom: 1rem solid rgb(207, 207, 207);
+    border-left: 1rem solid rgb(207, 207, 207);
+    border-radius: 1rem;
+    width: 50%;
+    height: 50%;
+    max-height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: boxcolorchange linear 2s alternate infinite;
+}
+
+@keyframes boxcolorchange {
+    from {
+        border-top: 0.5rem solid rgb(207, 207, 207);
+        border-right: 0.5rem solid rgb(207, 207, 207);
+        border-bottom: 0.5rem solid rgb(207, 207, 207);
+        border-left: 0.5rem solid rgb(207, 207, 207);
+        box-shadow: none;
+    }
+
+    to {
+        border-top: 0.5rem solid rgb(139, 61, 202);
+        border-right: 0.5rem solid rgb(235, 48, 48);
+        border-bottom: 0.5rem solid rgb(250, 151, 2);
+        border-left: 0.5rem solid rgb(190, 230, 13);
+        box-shadow: 0.1rem 0.1rem 2rem rgb(250, 151, 2);
+
+    }
+}
+
+.chatname {
+    font-size: 3rem;
+    width: fit-content;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: 500;
+    border-top: 0.5rem solid rgb(243, 188, 8);
+    border-radius: 50%;
+    color: rgb(243, 188, 8);
+}
+
+.chatlogininput {
+    outline: none;
+    text-align: center;
+    width: 50%;
+    margin-top: 2rem;
+    padding: 0.5rem 1rem;
+    border: 0.05rem solid rgb(255, 255, 255);
+    border-radius: 1rem;
+    color: #ffffff;
+    background: transparent;
+    border-bottom: 0.5rem solid rgb(243, 188, 8);
+}
+
+.chatlogininput::placeholder {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: center;
+
+}
+
+.joincontainer a>.chatloginbutton {
+    width: 20rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 1rem;
+    background-image: linear-gradient(to right, rgb(243, 188, 8), rgb(207, 79, 62));
+}
+
+@media only screen and (max-width : 425px) {
+    .joincontainer {
+        width: 90%;
+        height: 30rem;
+    }
+
+    .chatlogininput {
+        width: 60%;
+    }
+}
+
+@media only screen and (min-width : 426px) and (max-width : 768px) {
+    .joincontainer {
+
+        width: 70%;
+
+    }
+}

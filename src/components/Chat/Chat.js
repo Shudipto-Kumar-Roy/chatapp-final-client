@@ -8,7 +8,7 @@ import ReactScrollToBottom from "react-scroll-to-bottom";
 
 let socket;
 // const ENDPOINT = "http://localhost:4500";
-const ENDPOINT = "https://nrs-wechat.herokuapp.com/";
+const ENDPOINT = "https://chatapp-final-server.herokuapp.com/";
 
 const Chat = () => {
     const [id, setId] = useState("");
